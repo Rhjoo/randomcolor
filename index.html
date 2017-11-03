@@ -10,6 +10,13 @@
     </style>
   </head>
   <body>
-    <button>Click Me!</button>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <script type="text/javascript">
+      function myFunction() {
+        var x = Math.floor(Math.random()*255);
+        console.log(x);
+        document.body.style.backgroundColor = "rgb(0,0,x)";
+      }
+    </script>
   </body>
 </html>
