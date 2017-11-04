@@ -5,7 +5,7 @@
     <title>Random Color background</title>
     <style>
       body {
-        background-color: yellow;
+        background-color: rgb(188,238,212);
       }
     </style>
   </head>
@@ -14,8 +14,10 @@
     <script type="text/javascript">
       function myFunction() {
         var x = Math.floor(Math.random()*256);
-        console.log(x);
-        document.body.style.backgroundColor = "rgb(0,0," + x +")";
+        var y = Math.floor(Math.random()*256);
+        var z = Math.floor(Math.random()*256);
+        console.log(x,y,z);
+        document.body.style.backgroundColor = "rgb("+x+","+y+","+z+")";
       }
     </script>
   </body>
