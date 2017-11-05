@@ -3,26 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Random Color background</title>
-    <style>
-      body {
-        background-color: rgb(188,238,212);
-      }
-      button {
-        margin: auto;
-        display: block;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script type="text/javascript" src="myscript.js"></script>
+
   </head>
+  
   <body>
     <button type="button" onclick="myFunction()">Click Me!</button>
-    <script type="text/javascript">
-      function myFunction() {
-        var x = Math.floor(Math.random()*256);
-        var y = Math.floor(Math.random()*256);
-        var z = Math.floor(Math.random()*256);
-        console.log(x,y,z);
-        document.body.style.backgroundColor = "rgb("+x+","+y+","+z+")";
-      }
-    </script>
+
   </body>
 </html>
